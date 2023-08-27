@@ -1,0 +1,177 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  margin: 0;
+  background-color: black;
+  color: whitesmoke;
+  /* color: whitesmoke; */
+}
+
+/*start header nav*/
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: brown;
+}
+
+nav {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  background-color: brown;
+  /* height: 60px; */
+}
+
+.nav-logo {
+  border-right: 2px solid whitesmoke;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.links {
+  flex-grow: 1;
+  text-transform: capitalize;
+}
+
+.cart {
+  text-transform: uppercase;
+}
+/*end header-nav*/
+
+/*start ad*/
+
+#ad {
+  height: 150vh;
+  background-color: brown;
+  background-image: url("../img/pasta-1132314_1280.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+#ad h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+#ad p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu h1{
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+#menu p {
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 320px) {
+  .title {
+    background-color: rgba(0, 0, 0, 0.467);
+    height: 50vh;
+  }
+
+  #ad h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #ad p {
+    font-size: 25px;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+}
+
+
+.contanier{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lsits {
+    border: 1px solid whitesmoke;
+    margin: 5px;
+    width: 230px;
+    position: relative;
+}
+
+.lsits p {
+    color: green;
+}
+
+/* .list img {
+    max-width: 100%;
+} */
+
+.list-body{
+    text-align: center;
+}
+
+/* .bag{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.list-img{
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.add{
+    margin-bottom: 5px;
+    background-color: brown;
+    padding: 5px 15px;
+    border: 0;
+    cursor: pointer;
+}
+
+.dis{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: brown;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+/*end ad*/
+
+/*footer start*/
+
+footer{
+    padding: 30px;
+    background-color: brown;
+    text-align: center;
+}
+
+/*footer end*/
